@@ -4,6 +4,14 @@ local MainUI = UILibrary.Load("Volcano X")
 local MainPage = MainUI.AddPage("Main")
 local CombatPage = MainUI.AddPage("Combat")
 local teleportPage = MainUI.AddPage("Teleports")
+local AimlockPage = MainUI.AddPage("Aimlock")
+local FunstuffPage = MainUI.AddPage("Fun Stuff")
+local AutoBuyPage = MainUI.AddPage("Auto Buy")
+local TargetPage = MainUI.AddPage("Target")
+local GodPage = MainUI.AddPage("God Stuff")
+local autofarm = MainUI.AddPage("Autofarms")
+local AnimationsPage = MainUI.AddPage("Animations")
+local CreditsPage = MainUI.AddPage("Credits")
 -- // TOGGLE! (DONT FUCK UP MY FUCKING TOGGLE NIGGER)
 
 local Mouse = game.Players.LocalPlayer:GetMouse()
@@ -2306,6 +2314,14 @@ local godbutton = GodPage.AddButton("God Bullet", function()
     armValue.Name = 'Armor';
 end)
 
+local CreditsButton = CreditsPage.AddButton("dylann#0009 - Developer", function()
+    setclipboard("dylann#0009") 
+end)
+
+local CreditsButton = CreditsPage.AddButton("Dimag16#1616 - Owner", function()
+    setclipboard("Dimag16#1616") 
+end)
+
 local TargetButton = TargetPage.AddButton("Target UI", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/DH-VictimMenu-Script/main/Dh%20VictimMenu%3A%20Script"))()
 end)
@@ -2465,7 +2481,7 @@ DisableMod = false
 if ifMod[player.UserId] then
     IsMod = true
     DisableMod = true
-    game.StarterGui:SetCore("SendNotification", {Title = "Volacno X", Text = "Mod Perms Granted, thanks for buying!", Icon = "rbxassetid://505845268", Duration = 9, Button1 = "Alright, Thank you!"})
+    game.StarterGui:SetCore("SendNotification", {Title = "Volcano X", Text = "Mod Perms Granted, thanks for buying!", Icon = "rbxassetid://505845268", Duration = 9, Button1 = "Alright, Thank you!"})
 else
     IsMod = false
 end
